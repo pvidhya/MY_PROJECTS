@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ProductCatalog>
+    <console id="00L1" retailer="Dell">
+        <image>/csj/images/laptop/alienware17.jpg</image>
+        <name>Alienware 17</name>
+        <type>Laptop</type>
+        <retailername>BestDeal</retailername>
+        <retailerzip>90007</retailerzip>
+        <retailercity>LA</retailercity>
+        <retailerstate>CA</retailerstate>
+        <productonsale>Yes</productonsale>
+        <manufacturername>Dell</manufacturername>
+        <manufacturerrebate> Yes</manufacturerrebate>
+        <condition>New</condition>
+        <price>949</price>
+        <accessories>
+            <accessory>Earphones</accessory>
+            <accessory>Adapter</accessory>
+        </accessories>
+    </console>
+    <console id="00L2" retailer="Apple">
+        <image>/csj/images/laptop/macbookpro.jpg</image>
+        <name>MacBook Air 13.3”</name>
+        <type>Laptop</type>
+        <retailername>BestDeal</retailername>
+        <retailerzip>90007</retailerzip>
+        <retailercity>LA</retailercity>
+        <retailerstate>CA</retailerstate>
+        <productonsale>Yes</productonsale>
+        <manufacturername>Apple</manufacturername>
+        <manufacturerrebate> Yes</manufacturerrebate>
+        <condition>New</condition>
+        <price>1649</price>
+        <accessories>
+            <accessory>Earphones</accessory>
+            <accessory>Adapter</accessory>
+        </accessories>
+    </console>
+    <console id="00L3" retailer="Dell">
+        <image>/csj/images/laptop/dellinspiron15.jpg</image>
+        <name>Dell inspiron 14"</name>
+        <type>Laptop</type>
+        <retailername>BestDeal</retailername>
+        <retailerzip>90007</retailerzip>
+        <retailercity>LA</retailercity>
+        <retailerstate>CA</retailerstate>
+        <productonsale>Yes</productonsale>
+        <manufacturername>Dell</manufacturername>
+        <manufacturerrebate> Yes</manufacturerrebate>
+        <condition>New</condition>
+        <price>580</price>
+        <accessories>
+            <accessory>Earphones</accessory>
+            <accessory>Adapter</accessory>
+        </accessories>
+    </console>
+    <console id="00L4" retailer="HP">
+        <image>/csj/images/laptop/HP.jpg</image>
+        <name>HP 17.3</name>
+        <type>Laptop</type>
+        <retailername>BestDeal</retailername>
+        <retailerzip>90007</retailerzip>
+        <retailercity>LA</retailercity>
+        <retailerstate>CA</retailerstate>
+        <productonsale>Yes</productonsale>
+        <manufacturername>BestDeal</manufacturername>
+        <manufacturerrebate> Yes</manufacturerrebate>
+        <condition>New</condition>
+        <price>849</price>
+        <accessories>
+            <accessory>Earphones</accessory>
+            <accessory>Adapter</accessory>
+        </accessories>
+    </console>
+</ProductCatalog>

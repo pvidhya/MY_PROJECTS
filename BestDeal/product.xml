@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ProductCatalog>
+    <console id="001">
+        <image>/csj/images/smartphone/iphone7.jpg</image>
+        <name>iPhone7</name>
+        <type>Smartphone</type>
+        <retailername>BestDeal</retailername>
+        <retailerzip>90007</retailerzip>
+        <retailercity>LA</retailercity>
+        <retailerstate>CA</retailerstate>
+        <productonsale>Yes</productonsale>
+        <manufacturername>Apple</manufacturername>
+        <manufacturerrebate> Yes</manufacturerrebate>
+        <condition>New</condition>
+        <price>749</price>
+        <accessories>
+            <accessory>Earphones</accessory>
+            <accessory>Adapter</accessory>
+        </accessories>
+    </console>
+    <console id="002">
+        <image>/csj/images/smartphone/iphone6.jpg</image>
+        <name>iPhone6</name>
+        <type>Smartphone</type>
+        <retailername>BestDeal</retailername>
+        <retailerzip>90007</retailerzip>
+        <retailercity>LA</retailercity>
+        <retailerstate>CA</retailerstate>
+        <productonsale>No</productonsale>
+        <manufacturername>Apple</manufacturername>
+        <manufacturerrebate> Yes</manufacturerrebate>
+        <condition>New</condition>
+        <price>649</price>
+        <accessories>
+            <accessory>Earphones</accessory>
+            <accessory>Adapter</accessory>
+        </accessories>
+    </console>
+    <console id="003">
+        <image>/csj/images/smartphone/samsunggalaxys7.jpg</image>
+        <name>Samsung Galaxy S7</name>
+        <type>Smartphone</type>
+        <retailername>BestDeal</retailername>
+        <RetailerZip>90007</RetailerZip>
+        <RetailerCity>LA</RetailerCity>
+        <RetailerState>CA</RetailerState>
+        <ProductOnSale>Yes</ProductOnSale>
+        <ManufacturerName>Samsung</ManufacturerName>
+        <ManufacturerRebate>No</ManufacturerRebate>
+        <condition>New</condition>
+        <price>780</price>
+        <accessories>
+            <accessory>Earphones</accessory>
+            <accessory>Adapter</accessory>
+        </accessories>
+    </console>
+    <console id="004">
+        <image>/csj/images/smartphone/samsungedge.jpg</image>
+        <name>SamsungEdge</name>
+        <type>Smartphone</type>
+        <retailername>BestDeal</retailername>
+        <RetailerZip>90007</RetailerZip>
+        <RetailerCity>LA</RetailerCity>
+        <RetailerState>CA</RetailerState>
+        <ProductOnSale>Yes</ProductOnSale>
+        <ManufacturerName>Samsung</ManufacturerName>
+        <ManufacturerRebate> Yes</ManufacturerRebate>
+        <condition>New</condition>
+        <price>749</price>
+        <accessories>
+            <accessory>Earphones</accessory>
+            <accessory>Adapter</accessory>
+        </accessories>
+    </console>
+    <console id="003">
+        <image>/csj/images/smartphone/samsungedge.jpg</image>
+        <name>Samsung Galaxy S7</name>
+        <type>Smartphone</type>
+        <retailername>BestDeal</retailername>
+        <RetailerZip>90007</RetailerZip>
+        <RetailerCity>LA</RetailerCity>
+        <RetailerState>CA</RetailerState>
+        <ProductOnSale>Yes</ProductOnSale>
+        <ManufacturerName>Samsung</ManufacturerName>
+        <ManufacturerRebate> Yes</ManufacturerRebate>
+        <condition>New</condition>
+        <price>749</price>
+        <accessories>
+            <accessory>Earphones</accessory>
+            <accessory>Adapter</accessory>
+        </accessories>
+    </console>
+</ProductCatalog>

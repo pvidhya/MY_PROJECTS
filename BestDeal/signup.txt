@@ -1,0 +1,15 @@
+<!doctype html>
+<html>
+
+<form action="Validation" method="post">  
+Firstname: <input type="text" name="firstname"/><br/><br/> 
+Lastname: <input type="text" name="lastname"/><br/><br/>   
+E-mail: <input type="text" name="email"/><br/><br/>  
+Password: <input type="password" name="userpass"/><br/><br/>  
+Confirm Password: <input type="text" name="confirmuserpass"/><br/><br/> 
+Phone Number: <input type="text" name="phonenumber"/><br/><br/> 
+<input type="submit" value="Create an Account"/>
+
+</form>  
+
+</html>

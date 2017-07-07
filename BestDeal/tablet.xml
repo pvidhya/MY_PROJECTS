@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ProductCatalog>
+    <console id="00T1" retailer="Apple">
+        <image>/csj/images/tablet/ipad_mini.jpg</image>
+        <name>iPad mini</name>
+        <type>Tablet</type>
+        <retailername>BestDeal</retailername>
+        <retailerzip>90007</retailerzip>
+        <retailercity>LA</retailercity>
+        <retailerstate>CA</retailerstate>
+        <productonsale>Yes</productonsale>
+        <manufacturername>Apple</manufacturername>
+        <manufacturerrebate> Yes</manufacturerrebate>
+        <condition>New</condition>
+        <price>349</price>
+        <accessories>
+            <accessory>Earphones</accessory>
+            <accessory>Adapter</accessory>
+        </accessories>
+    </console>
+    <console id="00T2" retailer="Apple">
+        <image>/csj/images/tablet/ipadair2.jpg</image>
+        <name>Macbook Pro</name>
+        <type>Tablet</type>
+        <retailername>BestDeal</retailername>
+        <retailerzip>90007</retailerzip>
+        <retailercity>LA</retailercity>
+        <retailerstate>CA</retailerstate>
+        <productonsale>Yes</productonsale>
+        <manufacturername>Apple</manufacturername>
+        <manufacturerrebate> Yes</manufacturerrebate>
+        <condition>New</condition>
+        <price>449</price>
+        <accessories>
+            <accessory>Earphones</accessory>
+            <accessory>Adapter</accessory>
+        </accessories>
+    </console>
+    <console id="00T3" retailer="Lenovo">
+        <image>/csj/images/tablet/lenovotab3.jpg</image>
+        <name>Lenovo tab3</name>
+        <type>Tablet</type>
+        <retailername>BestDeal</retailername>
+        <retailerzip>90007</retailerzip>
+        <retailercity>LA</retailercity>
+        <retailerstate>CA</retailerstate>
+        <productonsale>Yes</productonsale>
+        <manufacturername>Lenovo</manufacturername>
+        <manufacturerrebate> Yes</manufacturerrebate>
+        <condition>New</condition>
+        <price>280</price>
+        <accessories>
+            <accessory>Earphones</accessory>
+            <accessory>Adapter</accessory>
+        </accessories>
+    </console>
+    <console id="00T4" retailer="samsung">
+        <image>/csj/images/tablet/samsungtab2.jpg</image>
+        <name>Samsung tab2</name>
+        <type>Tablet</type>
+        <retailername>BestDeal</retailername>
+        <retailerzip>90007</retailerzip>
+        <retailercity>LA</retailercity>
+        <retailerstate>CA</retailerstate>
+        <productonsale>Yes</productonsale>
+        <manufacturername>Samsung</manufacturername>
+        <manufacturerrebate> Yes</manufacturerrebate>
+        <condition>New</condition>
+        <price>200</price>
+        <accessories>
+            <accessory>Earphones</accessory>
+            <accessory>Adapter</accessory>
+        </accessories>
+    </console>
+</ProductCatalog>

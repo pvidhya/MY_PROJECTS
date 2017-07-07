@@ -1,0 +1,15 @@
+			   INFORMATION SECURITY
+
+
+1. Open two terminals, one for client and another for the server.
+
+2. Type "./gcc sserver.cc -lssl -lcrypto -o server.o" to compile the server code.
+
+3. Then type "./server.o cert.pem key.pem 8080" to start the connection from the server.
+
+4. Type "./gcc sclient.cc -lssl -lcrypto -o client.o" to compile the client code.
+
+5. Then type "./server.o localhost 8080" to start the connection from the client.
+
+6. Finally, enter the input and wait for the incremented response from the server.
+ 

@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Select Iteneraries</title>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <style>
+		input[type=submit] {
+			padding: 17px 30px;
+			color: #fff;
+			float: left;
+			font-family: 'Oxygen', sans-serif;
+			background: #012B39;
+			border: 1px solid #40A46F;
+			cursor: pointer;
+			font-size: 18px;
+			transition: all 0.5s ease-out;
+			-webkit-transition: all 0.5s ease-out;
+			-moz-transition: all 0.5s ease-out;
+			-ms-transition: all 0.5s ease-out;
+			-o-transition: all 0.5s ease-out;
+			outline:none;
+			width: 30%;
+			-webkit-appearance: none;
+			border-radius: 1em;
+		}
+      /* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+      #map {
+        height: 100%;
+      }
+      /* Optional: Makes the sample page fill the window. */
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+      .controls {
+        margin-top: 10px;
+        border: 1px solid transparent;
+        border-radius: 2px 0 0 2px;
+        box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        height: 32px;
+        outline: none;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+      }
+
+      #pac-input {
+        background-color: #fff;
+        font-family: Roboto;
+        font-size: 15px;
+        font-weight: 300;
+        margin-left: 12px;
+        padding: 0 11px 0 13px;
+        text-overflow: ellipsis;
+        width: 300px;
+      }
+
+      #pac-input:focus {
+        border-color: #4d90fe;
+      }
+
+      .pac-container {
+        font-family: Roboto;
+      }
+
+      #type-selector {
+        color: #fff;
+        background-color: #4d90fe;
+        padding: 5px 11px 0px 11px;
+      }
+
+      #type-selector label {
+        font-family: Roboto;
+        font-size: 13px;
+        font-weight: 300;
+      }
+    </style>
+	<script>
+	  var map;
+	  var markers = [];
+	  var locations = [];
+	  var descriptions = [];
+	  
+      function initMap() {
+		
+		map = new google.maps.Map(document.getElementById('map'), {
+          center: {lat: 37.0902, lng: -95.7129},
+          zoom: 5
+        });
+		
+		var input = (document.getElementById('pac-input'));
+		map.controls[google.maps.ControlPosition.TOP_LEFT].push(input);
+		
+		var autocomplete = new google.maps.places.Autocomplete(input);
+        autocomplete.bindTo('bounds', map);
+		var infowindow = new google.maps.InfoWindow();
+		
+		autocomplete.addListener('place_changed', function() {
+			
+			var marker = new google.maps.Marker({ map: map, icon: 'http://maps.google.com/mapfiles/ms/icons/green-dot.png', anchorPoint: new google.maps.Point(0, -29) });
+			place = autocomplete.getPlace();
+			map.setCenter(place.geometry.location);
+			map.setZoom(16);
+			marker.setPosition(place.geometry.location);
+			marker.setVisible(true);
+			var address = '';
+			if(place.address_components){
+				if (place.address_components) {
+					address = [
+					(place.address_components[0] && place.address_components[0].short_name || ''),
+					(place.address_components[1] && place.address_components[1].short_name || ''),
+					(place.address_components[2] && place.address_components[2].short_name || '')
+					].join(' ');
+				}
+			}
+			google.maps.event.addListener(marker,'click', function(){
+					if(address != ''){
+						infowindow.setContent('<div><strong>' + place.name + '</strong><br>' + address);
+						infowindow.open(map,this);
+					}
+			});
+			
+			marker.addListener('click',function(){
+				if(marker.getIcon() == 'http://maps.google.com/mapfiles/ms/icons/green-dot.png'){
+					marker.setIcon('http://maps.google.com/mapfiles/ms/icons/red-dot.png');
+				}else{
+					marker.setIcon('http://maps.google.com/mapfiles/ms/icons/green-dot.png');
+				}
+				var divE = document.getElementById("places");
+				while (divE.hasChildNodes()) {
+					divE.removeChild(divE.firstChild);
+				}
+				divE = document.getElementById("places");
+				for(var i = 0;i < markers.length;i++){
+					if(markers[i].getIcon() != 'http://maps.google.com/mapfiles/ms/icons/red-dot.png'){
+						var input = document.createElement("input");
+						input.setAttribute('type',"hidden");
+						input.setAttribute('value',locations[i].lat()+';'+locations[i].lng());
+						input.setAttribute('name',descriptions[i]);
+						input.readOnly = true;
+						divE.appendChild(input);
+					}
+				}
+			});
+			
+			markers.push(marker);
+			locations.push(place.geometry.location);
+			descriptions.push(address);
+			
+			var form = document.getElementById("places");
+			var input = document.createElement("input");
+			input.setAttribute('type',"hidden");
+			input.setAttribute('value',place.geometry.location.lat()+';'+place.geometry.location.lng());
+			input.setAttribute('name',address);
+			input.readOnly = true;
+			form.appendChild(input);
+			
+			var bounds = new google.maps.LatLngBounds();
+			var input_elements = document.getElementById("places").getElementsByTagName("input");
+			for(i=0;i<input_elements.length;i++){
+				if(input_elements[i].type != "submit"){
+					var res = input_elements[i].value.split(";");
+					bounds.extend(new google.maps.LatLng(res[0], res[1]));
+				}
+			}
+			map.fitBounds(bounds);
+        });
+	  }
+    </script>
+  </head>
+  <body style="background-color:url(explore.png)">
+	<input id="pac-input" class="controls" type="text" placeholder="Enter a location" >
+	<section style="width:70%;height:71%;position:fixed">
+		<div id="map"></div>
+		<form Method="POST" action="/Explorer/createitenirary" >
+			<br/>
+			<div id="places">
+			<!--<textarea id="desc" name="desc" placeholder="Enter a Short Description" required style="height:50%;width:100%" ></textarea>-->
+			</div>
+			<input type="submit" value="Submit" style="height:50px;width:49.7%"/>
+		</form>
+		<form Method="POST" action="/Explorer/explorer_userHome.jsp" >
+			<input type="submit" value="Cancel" style="height:50px;width:49.7%"/>
+		</form>
+	</section>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD0tDyqcCigxxT12E00VCatJ3Aqglm4PpY&libraries=places&callback=initMap" async defer></script>
+  </body>
+  </html>

@@ -1,0 +1,177 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>bestdeal</title>
+<link rel="stylesheet" href="styles.css" type="text/css" />
+
+</head>
+<body>
+<div id="container">
+    <header>
+    	<h1><a href="/">Best<span>Deal</span></a></h1>
+        <h2>admit it..you need one</h2>
+    </header>
+
+    <nav>
+    	<ul>
+        	<li><a href="index">Home</a></li>
+            <li>
+            <div class="dropdown">
+            <a href="#">Products</a>
+            <div class="dropdown-content">
+                <a href="ServletProduct">Smart Phones</a>
+                <a href="ServletTablet">Tablets</a>
+                <a href="ServletLaptop">Laptops</a>
+                <a href="ServletTV">TV</a>
+            </div>
+            </div></li>
+            <!-- <li><a href="#">Services</a></li> -->
+            <li class=""><a href="deals.html">Deals</a></li>
+            <li class="log_in"><a href="index">logout</a></li>
+            <li class="log_in"><a href="Add_Products.html">Add Products</a></li>
+            <li class="log_in"><a href="Delete_Products.html">Delete Products</a></li>
+            <!-- <li  class="start selected" class="sign_up"></a href="signup.html">Create account</a></li> -->
+             <li class= "nav_bar_cart">
+             <a href= "Cart_Orders"><img src= "images/cart.png" style="width: 20px; height: 13px">
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+<head>
+<style>
+.dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+}
+
+.sidebar .a{
+    text-decoration: none;
+}
+</style>
+</head>
+<body>
+
+    <div id="body">
+		<section id="content">
+
+	    <article>
+
+        <form action="Add_Products" method="post">  
+  
+        ProductID:<input type="text" name="productID"/><br/><br/>  
+        ProductType:<input type="text" name="productType"/><br/><br/>  
+        ProductPrice:<input type="text" name="productPrice"/><br/><br/>  
+        ProductName:<input type="text" name="productName"/><br/><br/>  
+  
+        <br/><br/>  
+        <input type="submit" value="Update"/>  
+        </form>
+  
+       <!--  </form> 
+		<form action="Validation" method="post">  
+		Userame:<br> <input type="text" name="username"/><br/><br/>  
+	    E-mail: <br><input type="text" name="email"/><br/><br/>  
+		Password: <br><input type="password" name="password"/><br/><br/>  
+	    Confirm Password: <br><input type="password" name="con_password"/><br/><br/> 
+        User Type
+        <input type="radio" name="user_type" value="Customer" />Customer &nbsp;     
+        <input type="radio" name="user_type" value="Salesmen" />Salesmen &nbsp;
+        <input type="radio" name="user_type" value="StoreManager" />Store Manager
+        <br><br><input type="submit" value="Sign Up"/>  
+        </form>
+ -->	
+
+
+			
+		</article>
+        </section>
+        
+        <aside class="sidebar">
+	
+            <ul>	
+               <li>
+                    <h4>Categories</h4>
+                    <ul>
+                        <li><a href="#" style="text-decoration: none">Accessories</a></li>
+                        <li><a href="Shop_by_Brand" style="text-decoration: none">Shop by Brand</a></li>
+                        <li><a href="Shop_by_Product" style="text-decoration: none">Shop by Product</a></li>
+                    </ul>
+                </li>
+                
+                <li>
+                    <h4>About us</h4>
+                    <ul>
+                        <li class="text">
+                        	<p style="margin: 0;">Our mission is to bring the peple around the world closer by eleminating the distances through our devices.</p>.<a href="#" class="readmore">Read More &raquo;</a></p>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+		
+        </aside>
+    	<div class="clear"></div>
+    </div>
+    <footer>
+        <div class="footer-content">
+            <ul>
+            	<li><h4>Company info</h4></li>
+                <li><a href="#" style="text-decoration: none">About us</a></li>
+                <li><a href="#" style="text-decoration: none">Contat us</a></li>
+                <li><a href="#" style="text-decoration: none">FAQs</a></li>
+                <li><a href="#" style="text-decoration: none">Blos</a></li>
+            </ul>
+            
+            <ul>
+            	<li><h4>Customer service</h4></li>
+                <li><a href="#" style="text-decoration: none">Terms of Service</a></li>
+                <li><a href="#" style="text-decoration: none">Online Return Policy </a></li>
+                <li><a href="#" style="text-decoration: none">Privacy Policy</a></li>
+                <li><a href="#" style="text-decoration: none">Product Warranty</a></li>
+            </ul>
+            
+                     
+            <div class="clear"></div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; BestDeal 2016
+                     </div>
+    </footer>
+</div>
+</body>
+</html>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ProductCatalog>
+    <console id="00TV1" retailer="Samsung">
+        <image>/csj/images/TV/samsung40inch.jpg</image>
+        <name>Samsung 40'</name>
+        <type>TV</type>
+        <retailername>BestDeal</retailername>
+        <retailerzip>90007</retailerzip>
+        <retailercity>LA</retailercity>
+        <retailerstate>CA</retailerstate>
+        <productonsale>Yes</productonsale>
+        <manufacturername>Samsung</manufacturername>
+        <manufacturerrebate> Yes</manufacturerrebate>
+        <condition>New</condition>
+        <price>249</price>
+        <accessories>
+            <accessory>Chromecast</accessory>
+            <accessory>Adapter</accessory>
+        </accessories>
+    </console>
+    <console id="00TV2" retailer="Samsung">
+        <image>/csj/images/TV/samsung60inch.jpg</image>
+        <name>Samsung 60'</name>
+        <type>TV</type>
+        <retailername>BestDeal</retailername>
+        <retailerzip>90007</retailerzip>
+        <retailercity>LA</retailercity>
+        <retailerstate>CA</retailerstate>
+        <productonsale>Yes</productonsale>
+        <manufacturername>Samsung</manufacturername>
+        <manufacturerrebate> Yes</manufacturerrebate>
+        <condition>New</condition>
+        <price>169</price>
+        <accessories>
+            <accessory>Chromecast</accessory>
+            <accessory>Adapter</accessory>
+        </accessories>
+    </console>
+    <console id="00TV3" retailer="Toshiba">
+        <image>/csj/images/TV/toshiba40inch.jpg</image>
+        <name>Tosh</name>
+        <type>TV</type>
+        <retailername>BestDeal</retailername>
+        <retailerzip>90007</retailerzip>
+        <retailercity>LA</retailercity>
+        <retailerstate>CA</retailerstate>
+        <productonsale>Yes</productonsale>
+        <manufacturername>Toshiba</manufacturername>
+        <manufacturerrebate> Yes</manufacturerrebate>
+        <condition>New</condition>
+        <price>280</price>
+        <accessories>
+            <accessory>Chromecast</accessory>
+            <accessory>Adapter</accessory>
+        </accessories>
+    </console>
+    <console id="00TV4" retailer="Insignia">
+        <image>/csj/images/TV/insignia48inch.jpg</image>
+        <name>Insignia 48'</name>
+        <type>TV</type>
+        <retailername>BestDeal</retailername>
+        <retailerzip>90007</retailerzip>
+        <retailercity>LA</retailercity>
+        <retailerstate>CA</retailerstate>
+        <productonsale>Yes</productonsale>
+        <manufacturername>Insignia</manufacturername>
+        <manufacturerrebate> Yes</manufacturerrebate>
+        <condition>New</condition>
+        <price>249</price>
+        <accessories>
+            <accessory>Chromecast</accessory>
+            <accessory>Adapter</accessory>
+        </accessories>
+    </console>
+</ProductCatalog>
