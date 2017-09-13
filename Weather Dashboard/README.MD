@@ -36,3 +36,5 @@ Sqlite3 is used as the database.
 * The table has Columns- city, timestamp, temperature, humidity, pressure, wind speed
 * It uses dbAPI to write in this table
 * It uses Read.py to read from this table
+
+![imag0021_1](https://user-images.githubusercontent.com/13951660/30362434-b05361b6-9821-11e7-90dc-6625ad1f436e.jpg)
