@@ -8,8 +8,6 @@ app = Flask(__name__)
 dbName='weatherinfo.db'
 
 #creating a table in sqlite3 with required columns
-#does this mean that this API will be a GET request?  
-#why GET method? not getting any information. shouldn't it be post request?
 @app.route("/create", methods=['GET'])
 @flask_nicely.nice_json
 def createTable(): 
@@ -21,8 +19,6 @@ def createTable():
     conn.close()
     return {"status":"success"}
 
-
-#why dropping a table? and when dropping the table?
 @app.route("/drop", methods=['GET'])
 @flask_nicely.nice_json    
 def dropTable():
@@ -60,7 +56,6 @@ def insert():
 @app.route("/insertdummy", methods=['GET'])
 @flask_nicely.nice_json
 def insertdummy():
-    #how are we insering this dummy data?
     tableName=request.args.get("tablename")
     city=request.args.get("city")
     region=request.args.get("region")
@@ -81,8 +76,6 @@ def insertdummy():
 @app.route("/read", methods=['GET'])
 @flask_nicely.nice_json
 def read():
-    #what is the query here?
-    #is it coming from fetchFromYahoo.py?
     query=request.args.get("query")
     conn = sqlite3.connect(dbName)
     cursor = conn.execute(query)
