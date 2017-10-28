@@ -36,7 +36,6 @@ while(1==1):
 			        humidity=weather['data']['humidity']
 			        pressure=weather['data']['pressure']
 			        windspeed=weather['data']['wind']['speed']
-			        #why using GET request instead of POST request?
 			        weather=requests.get("http://127.0.0.1:5003/insert?tablename=weather&city="+city+"&region="+region+"&country="+country+"&condition="+condition+"&temperature="+temperature+"&humidity="+humidity+"&pressure="+pressure+"&windspeed="+windspeed).json()
 			        print "Row inserted for "+city
 			        insertFlg=True
