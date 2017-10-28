@@ -47,7 +47,6 @@ def insert():
     pressure=request.args.get("pressure")
     windspeed=request.args.get("windspeed")
     conn = sqlite3.connect(dbName)
-    #how values being fetched from fetchFromYahoo.py to this place?
     conn.execute("INSERT INTO "+tableName+" VALUES ('"+city+"','"+region+"','"+country+"',DATETIME('now','localtime'),'"+condition+"','"+temperature+"','"+humidity+"','"+pressure+"','"+windspeed+"')")
     conn.commit()
     conn.close()
