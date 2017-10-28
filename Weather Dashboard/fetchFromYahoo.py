@@ -21,7 +21,6 @@ def fetchWeather(city):
         data = json.loads(result)['query']['results']['channel']
 
         jsn={}
-        #{{location:}{condition:}{temerature:}{pressure:}{humidity:}{wind:}}....?
         jsn['location']=data['location']
         jsn['condition']=data['item']['condition']['text']
         jsn['temperature']=data['item']['condition']['temp']
